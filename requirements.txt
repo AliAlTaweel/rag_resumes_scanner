@@ -1,0 +1,22 @@
+# Core Framework
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-chroma>=0.1.4
+
+# PDF and Text Processing
+pypdf>=5.0.0
+sentence-transformers>=3.1.0
+
+# Database and Utilities
+chromadb==0.5.20
+pydantic>=2.9.0
+transformers>=4.45.0
+# Standard torch install works for Mac MPS acceleration
+torch>=2.4.0 
+
+# Secrets & Authentication (Corrected names)
+python-dotenv
+huggingface-hub
+
+gradio

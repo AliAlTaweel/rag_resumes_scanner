@@ -1,0 +1,37 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+env/
+venv*
+
+# --- Environment / Secrets ---
+.env
+.flaskenv
+
+# --- RAG Specific (Local Databases) ---
+# This ignores your ChromaDB folder where resumes are stored
+db_resume/
+*.db
+*.sqlite3
+
+# --- LLM / Models ---
+# If you download the model locally, don't upload the gigabytes of weights
+my_local_llama/
+models/
+huggingface_cache/
+
+# --- Document Folders ---
+# Only uncomment the line below if you DON'T want to upload the resumes themselves
+# resumes/
+
+# --- Mac Specific ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- IDEs ---
+.vscode/
+.idea/
