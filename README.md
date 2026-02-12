@@ -33,6 +33,9 @@ resume_screener/
 ├── requirements.txt
 ├── pytest.ini
 ├── Makefile
+├── ingest.py
+├── .gitignore
+├── .env
 └── .env.example
 ```
 
