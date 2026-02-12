@@ -1,22 +1,57 @@
-# Core Framework
+# --- Core Framework ---
 langchain>=0.3.0
-langchain-community>=0.3.0
+langchain-community>=0.4.0
 langchain-huggingface>=0.1.0
-langchain-chroma>=0.1.4
 
-# PDF and Text Processing
+# --- Vector Database (Pinecone Upgrade) ---
+# We replace langchain-chroma and chromadb with these:
+langchain-pinecone>=0.2.0
+pinecone>=6.0.0
+
+# --- PDF and Text Processing ---
 pypdf>=5.0.0
 sentence-transformers>=3.1.0
 
-# Database and Utilities
-chromadb==0.5.20
+# --- Database and Utilities ---
 pydantic>=2.9.0
 transformers>=4.45.0
-# Standard torch install works for Mac MPS acceleration
+# Optimized for Mac Mini MPS
 torch>=2.4.0 
 
-# Secrets & Authentication (Corrected names)
+# --- Secrets & Authentication ---
 python-dotenv
 huggingface-hub
 
+# --- UI ---
 gradio
+
+
+
+# Core RAG dependencies
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+langchain-pinecone>=0.2.0
+langchain-text-splitters>=0.3.0
+
+# Vector store
+pinecone-client>=3.0.0
+
+# LLM / embedding backend
+huggingface-hub>=0.24.0
+sentence-transformers>=3.0.0
+torch>=2.0.0
+
+# PDF loading
+pypdf>=4.0.0
+
+# Web UI
+gradio>=4.0.0
+
+# Config
+python-dotenv>=1.0.0
+
+# Dev / test
+pytest>=8.0.0
+pytest-cov>=5.0.0
