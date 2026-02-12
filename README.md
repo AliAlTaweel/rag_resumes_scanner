@@ -27,6 +27,8 @@ resume_screener/
 │   ├── test_embeddings.py       # Tests for the embedding model
 │   ├── test_retriever.py        # Tests for vector store creation & loading
 │   └── test_rag_chain.py        # Tests for RAG chain & ask_question
+├── notebooks/                   # notebooks
+│   └── rag_resumes_scanner.ipynb
 ├── resumes/                     # Place PDF resumes here (git-ignored)
 ├── requirements.txt
 ├── pytest.ini
